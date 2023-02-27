@@ -1,6 +1,4 @@
-import java.util.LinkedList;
-
-public class day02_offer30 {
+public class day01_offer30 {
     public static void main(String[] args) {
         MinStack minStack=new MinStack();
         minStack.push(46);
