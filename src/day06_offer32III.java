@@ -52,19 +52,12 @@ class Solution32III {
 
 public class day06_offer32III {
     public static void main(String[] args) {
-        TreeNode treeNode3 = new TreeNode(3);
-        TreeNode treeNode9 = new TreeNode(9);
-        TreeNode treeNode20 = new TreeNode(20);
-        TreeNode treeNode15 = new TreeNode(15);
-        TreeNode treeNode7 = new TreeNode(7);
-        treeNode3.left = treeNode9;
-        treeNode3.right = treeNode20;
-        treeNode20.left = treeNode15;
-        treeNode20.right = treeNode7;
 
-        System.out.println(treeNode3);
+        int[] arr = {3, 9, 20, -1, -1, 15, 7};
+        TreeNode root = TreeBuilder.build(arr);
+        System.out.println(root);
         Solution32III solution32III = new Solution32III();
-        System.out.println(solution32III.levelOrder(treeNode3));
+        System.out.println(solution32III.levelOrder(root));
 
     }
 }
