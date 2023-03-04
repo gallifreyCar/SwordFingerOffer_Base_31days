@@ -6,6 +6,7 @@ public class ListBuilder {
             temp.next = new ListNode(num);
             temp = temp.next;
         }
+        listNode.next.end = temp;
         return listNode.next;
     }
 }

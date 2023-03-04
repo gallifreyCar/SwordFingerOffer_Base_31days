@@ -1,6 +1,7 @@
 public class ListNode {
     int val;
     ListNode next;
+    ListNode end;
 
     ListNode(int x) {
         val = x;
@@ -13,4 +14,6 @@ public class ListNode {
                 ", next=" + next +
                 '}';
     }
+
+
 }
