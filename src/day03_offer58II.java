@@ -1,5 +1,7 @@
-
-class Solution58 {
+/**
+ * https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof
+ */
+class Solution58II {
     public String reverseLeftWords(String s, int n) {
         //    左闭右开
         String a = s.substring(n);
@@ -10,9 +12,9 @@ class Solution58 {
 
 }
 
-public class day03_offer58 {
+public class day03_offer58II {
     public static void main(String[] args) {
         String s = "abdsgdg";
-        System.out.println(new Solution58().reverseLeftWords(s, 2));
+        System.out.println(new Solution58II().reverseLeftWords(s, 2));
     }
 }
