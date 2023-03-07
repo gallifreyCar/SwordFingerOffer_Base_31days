@@ -30,13 +30,13 @@ class Solution13 {
     //dfs
     public int movingCount2(int m, int n, int k) {
         boolean[][] signs = new boolean[m][n];
-        return recursion(0, 0, m, n, k, signs, 0);
+        return recursion(0, 0, m, n, k, signs);
     }
 
-    public int recursion(int i, int j, int m, int n, int k, boolean[][] signs, int num) {
+    public int recursion(int i, int j, int m, int n, int k, boolean[][] signs) {
         if (i >= m || j >= n || !isTrue(i, j, k) || signs[i][j]) return 0;
         signs[i][j] = true;
-        return recursion(i + 1, j, m, n, k, signs, num) + recursion(i, j + 1, m, n, k, signs, num) + 1;
+        return recursion(i + 1, j, m, n, k, signs) + recursion(i, j + 1, m, n, k, signs) + 1;
     }
 
 

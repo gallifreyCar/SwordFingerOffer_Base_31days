@@ -20,31 +20,31 @@ class Solution12 {
 
 
         //右下左上 顺时针深搜
-        if (j < board[0].length - 1) {
-            if (sign[i][j + 1] == 0) {
+        if (j < board[0].length - 1 && (sign[i][j + 1] == 0)) {
 
-                dfs(i, j + 1, charPoint + 1);
-                sign[i][j + 1] = 0;
-            }
+
+            dfs(i, j + 1, charPoint + 1);
+            sign[i][j + 1] = 0;
+
         }
-        if (i < board.length - 1) {
-            if (sign[i + 1][j] == 0) {
-                dfs(i + 1, j, charPoint + 1);
-                sign[i + 1][j] = 0;
-            }
+        if (i < board.length - 1 && (sign[i + 1][j] == 0)) {
+
+            dfs(i + 1, j, charPoint + 1);
+            sign[i + 1][j] = 0;
+
         }
 
-        if (j > 0) {
-            if (sign[i][j - 1] == 0) {
-                dfs(i, j - 1, charPoint + 1);
-                sign[i][j - 1] = 0;
-            }
+        if (j > 0 && (sign[i][j - 1] == 0)) {
+
+            dfs(i, j - 1, charPoint + 1);
+            sign[i][j - 1] = 0;
+
         }
-        if (i > 0) {
-            if (sign[i - 1][j] == 0) {
-                dfs(i - 1, j, charPoint + 1);
-                sign[i - 1][j] = 0;
-            }
+        if (i > 0 && (sign[i - 1][j] == 0)) {
+
+            dfs(i - 1, j, charPoint + 1);
+            sign[i - 1][j] = 0;
+
         }
 
 
